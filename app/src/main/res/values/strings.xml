@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Outfit of The Day</string>
+    <string name="choose_shirt">Pick out a shirt!</string>
 </resources>
