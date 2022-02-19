@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val button1 = findViewById<Button>(R.id.button1)
+        val button1 = findViewById<Button>(R.id.myButton)
         button1.setOnClickListener{
             val intent = Intent(this, CustomClothes::class.java)
             startActivity(intent)
