@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Outfit of The Day</string>
     <string name="choose_shirt">Pick out a shirt!</string>
+    <string name="jacket">Jacket</string>
+    <string name="coat">Coat</string>
+    <string name="shorts">Shorts</string>
+    <string name="jeans">Jeans</string>
+    <string name="tops">Tops</string>
+    <string name="bottoms">Bottoms</string>
 </resources>
