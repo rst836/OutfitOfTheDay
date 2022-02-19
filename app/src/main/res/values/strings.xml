@@ -11,4 +11,6 @@
         perfectly to tackle your day? Or do you just want to have fun and put on some wacky outfits.
         This app helps you visualize exactly what that would look like. Try it out. You could end up
         looking good like these people below.</string>
+    <string name="beginButton">Let\'s Begin</string>
+    <string name="title">Outfit App</string>
 </resources>
