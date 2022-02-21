@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Outfit of The Day</string>
-    <string name="choose_shirt">Pick out a shirt!</string>
-    <string name="jacket">Jacket</string>
-    <string name="coat">Coat</string>
-    <string name="shorts">Shorts</string>
-    <string name="jeans">Jeans</string>
-    <string name="tops">Tops</string>
-    <string name="bottoms">Bottoms</string>
+    <string name="shirt">Tap to change shirt color to blue(or don\'t if you like red)!</string>
+    <string name="jacket">Tap to change jacket color to blue(or don\'t if you like red)!</string>
+    <string name="hat">Tap to change hat color to blue(or don\'t if you like red)!</string>
+    <string name="pants">Tap to change pants color to blue(or don\'t if you like red)!</string>
+    <string name="shoes">Tap to change shoe color to blue(or don\'t if you like red)!</string>
     <string name="intro">Have you ever been at a loss on how to dress? How to style yourself
         perfectly to tackle your day? Or do you just want to have fun and put on some wacky outfits.
         This app helps you visualize exactly what that would look like. Try it out. You could end up

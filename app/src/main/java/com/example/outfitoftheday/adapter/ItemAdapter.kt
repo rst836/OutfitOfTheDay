@@ -1,6 +1,7 @@
 package com.example.outfitoftheday.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ class ItemAdapter (private val context: Context,
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageButton: ImageButton = view.findViewById(R.id.item_image)
         val color = "red"
+        var isBlue = arrayOf(false, false, false, false, false)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -30,8 +32,11 @@ class ItemAdapter (private val context: Context,
         holder.textView.text = context.resources.getString(item.stringResourceID)
         holder.imageButton.setImageResource(item.imageResourceID)
         holder.imageButton.setOnClickListener {
-            item.imageResourceID = R.drawable.img_1
-            notifyDataSetChanged()
+            if (holder.color.equals("red")) {
+                item.imageResourceID = R.drawable.blue
+                holder.isBlue[position] = true
+                notifyDataSetChanged()
+            }
         }
     }
 
