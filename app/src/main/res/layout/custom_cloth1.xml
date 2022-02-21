@@ -9,23 +9,11 @@
 
 
     <Button
-        android:id="@+id/result_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="104dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/resultButton"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycler_view"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-230dp"
+        android:layout_marginTop="-30dp"
         android:layout_marginBottom="-615dp"
         android:text="@string/backButton"
         android:translationX="0dp"
@@ -36,11 +24,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
+        android:layout_marginTop="-30dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="-570dp"
         android:text="@string/generate"
@@ -48,28 +38,10 @@
         android:translationY="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
-
-
-    <Button
-        android:id="@+id/toTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginBottom="-614dp"
-        android:text="@string/toTop"
-        android:translationX="0dp"
-        android:translationY="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
-
-
+        app:layout_constraintVertical_bias="0.517" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
