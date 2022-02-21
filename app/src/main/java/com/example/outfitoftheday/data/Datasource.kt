@@ -7,6 +7,15 @@ class Datasource {
     fun loadQuotes(): List<Outfit> {
         return listOf<Outfit>(
             Outfit(R.string.app_name, R.drawable.img),
-        )
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img),
+            Outfit(R.string.app_name, R.drawable.img)
+            )
     }
 }

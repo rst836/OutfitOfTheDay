@@ -12,5 +12,6 @@
         This app helps you visualize exactly what that would look like. Try it out. You could end up
         looking good like these people below.</string>
     <string name="beginButton">Let\'s Begin</string>
+    <string name="backButton">Go Back</string>
     <string name="title">Outfit App</string>
 </resources>
