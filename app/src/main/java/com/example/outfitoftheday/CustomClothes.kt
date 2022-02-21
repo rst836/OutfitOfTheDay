@@ -18,11 +18,10 @@ class CustomClothes : AppCompatActivity() {
         setContentView(R.layout.custom_cloth1)
         val myDataset = Datasource().loadQuotes()
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-        recyclerView.adapter = ItemAdapter(context = this, myDataset)
+        recyclerView.adapter = ItemAdapter(context = this, myDataset, isBlue)
         recyclerView.setHasFixedSize(true)
         val button2 = findViewById<Button>(R.id.button2)
         button2.setOnClickListener {
-            Log.d("demo", isBlue.toString())
             finish()
         }
     }

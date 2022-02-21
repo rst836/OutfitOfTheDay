@@ -13,7 +13,8 @@ import com.example.outfitoftheday.R
 import com.example.outfitoftheday.outfit.Outfit
 
 class ItemAdapter (private val context: Context,
-    private val dataset: List<Outfit>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
+    private val dataset: List<Outfit>,
+    var isBlue: Array<Boolean>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view){
         val textView: TextView = view.findViewById(R.id.item_title)
@@ -32,13 +33,14 @@ class ItemAdapter (private val context: Context,
         holder.textView.text = context.resources.getString(item.stringResourceID)
         holder.imageButton.setImageResource(item.imageResourceID)
         holder.imageButton.setOnClickListener {
-            if (!CustomClothes().isBlue[position]) {
+            if (!isBlue[position]) {
                 item.imageResourceID = R.drawable.blue
-                CustomClothes().isBlue[position] = true
+                isBlue[position] = true
                 notifyDataSetChanged()
-            } else {
+            }
+            else{
                 item.imageResourceID = R.drawable.red
-                CustomClothes().isBlue[position] = false
+                isBlue[position] = false
                 notifyDataSetChanged()
             }
         }
