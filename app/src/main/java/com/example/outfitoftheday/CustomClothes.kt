@@ -1,5 +1,6 @@
 package com.example.outfitoftheday
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,6 +21,11 @@ class CustomClothes : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ItemAdapter(context = this, myDataset, isBlue)
         recyclerView.setHasFixedSize(true)
+        val resultButton = findViewById<Button>(R.id.result_button)
+        resultButton.setOnClickListener{
+            val intent = Intent(this, ResultScreen::class.java)
+            startActivity(intent)
+        }
         val button2 = findViewById<Button>(R.id.button2)
         val button3 = findViewById<Button>(R.id.button3)
         button2.setOnClickListener {
