@@ -32,9 +32,13 @@ class ItemAdapter (private val context: Context,
         holder.textView.text = context.resources.getString(item.stringResourceID)
         holder.imageButton.setImageResource(item.imageResourceID)
         holder.imageButton.setOnClickListener {
-            if (holder.color.equals("red")) {
+            if (!CustomClothes().isBlue[position]) {
                 item.imageResourceID = R.drawable.blue
                 CustomClothes().isBlue[position] = true
+                notifyDataSetChanged()
+            } else {
+                item.imageResourceID = R.drawable.red
+                CustomClothes().isBlue[position] = false
                 notifyDataSetChanged()
             }
         }
