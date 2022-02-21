@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.outfitoftheday.CustomClothes
 import com.example.outfitoftheday.R
 import com.example.outfitoftheday.outfit.Outfit
 
@@ -18,7 +19,6 @@ class ItemAdapter (private val context: Context,
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageButton: ImageButton = view.findViewById(R.id.item_image)
         val color = "red"
-        var isBlue = arrayOf(false, false, false, false, false)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -34,7 +34,7 @@ class ItemAdapter (private val context: Context,
         holder.imageButton.setOnClickListener {
             if (holder.color.equals("red")) {
                 item.imageResourceID = R.drawable.blue
-                holder.isBlue[position] = true
+                CustomClothes().isBlue[position] = true
                 notifyDataSetChanged()
             }
         }
