@@ -20,8 +20,8 @@
     <string name="title">Outfit App</string>
     <string name="resultButton">Generate Outfit</string>
     <string name="outfitMade1">This is a great outfit!</string>
-    <string name="outfitMade2">You will look so good in it, and you can thanks us later when you
-        do!</string>
+    <string name="outfitMade2">You are ready to rock this! Don\'t forget to tell your friends about
+    this app as well so that they too can try some awesome outfits!</string>
     <string name="restart">Generate another outfit?</string>
     <string name="toTop">Scroll to top</string>
 </resources>
