@@ -3,13 +3,14 @@ package com.example.outfitoftheday
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 import com.example.outfitoftheday.adapter.ItemAdapter
 import com.example.outfitoftheday.data.Datasource
 import com.example.outfitoftheday.R
 
 class CustomClothes : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.custom_cloth1)
         val myDataset = Datasource().loadQuotes()
