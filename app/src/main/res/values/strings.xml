@@ -11,5 +11,6 @@
         looking good like these people below.</string>
     <string name="beginButton">Let\'s Begin</string>
     <string name="backButton">Go Back</string>
+    <string name="generate">Generate</string>
     <string name="title">Outfit App</string>
 </resources>

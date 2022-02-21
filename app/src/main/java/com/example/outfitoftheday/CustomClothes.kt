@@ -21,8 +21,11 @@ class CustomClothes : AppCompatActivity() {
         recyclerView.adapter = ItemAdapter(context = this, myDataset, isBlue)
         recyclerView.setHasFixedSize(true)
         val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
         button2.setOnClickListener {
             finish()
+        }
+        button3.setOnClickListener {
         }
     }
 }

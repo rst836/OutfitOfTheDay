@@ -36,13 +36,12 @@ class ItemAdapter (private val context: Context,
             if (!isBlue[position]) {
                 item.imageResourceID = R.drawable.blue
                 isBlue[position] = true
-                notifyDataSetChanged()
             }
             else{
                 item.imageResourceID = R.drawable.red
                 isBlue[position] = false
-                notifyDataSetChanged()
             }
+            notifyDataSetChanged()
         }
     }
 
